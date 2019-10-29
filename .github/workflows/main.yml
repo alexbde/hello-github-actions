@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
+    - name: test
+      run: echo "Hello, world."
     - uses: ./action-a
       env:
         MY_NAME: "Mona"
